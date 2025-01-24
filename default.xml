@@ -1,0 +1,19 @@
+<manifest>
+    <!-- Google Standard Manifest -->
+    <remote name="aosp" fetch="https://android.googlesource.com/" />
+    <default revision="android-12.1.0_r1" remote="aosp" sync-j="4" />
+
+    <!-- Device-specific repositories -->
+    <project name="blackzos-android-build-enviroment/derpfest_device_motorola_sanders" 
+             path="device/motorola/sanders" 
+             remote="github" />
+    <project name="blackzos-android-build-enviroment/derpfest_vendor_motorola_sanders" 
+             path="vendor/motorola/sanders" 
+             remote="github" />
+    <project name="blackzos-android-build-enviroment/derpfest_kernel_motorola_sanders" 
+             path="kernel/motorola/sanders" 
+             remote="github" />
+
+    <!-- Add the GitHub remote -->
+    <remote name="github" fetch="https://github.com/" />
+</manifest>
